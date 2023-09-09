@@ -3,17 +3,17 @@
 using namespace std;
 int main()
 {
-	int a;
-	cout<<"\tEnter A Number\n";
-	cin>>a;
-	if( a%7==0 && a%11!=0)
-	cout<<"\t It Is Divisible By 7 & not Divisible By 11\n";
-	else if(a%7!=0)
-      cout<<"\tIt Is Not Divisible By 7 & 11\n";	
-	else{
-		cout<<"\t It IS Divisible By 7 & 11\n";
-	}
-	cout<<"\t M Qavi Sheikh";
+	char ch;
+	int char_count = 0;
+	do
+	{
+	cout<<"Enter Any Character Expect Than Q : ";
+		ch = getche();
+		cout<<endl;
+		char_count++;
+	}while(ch!='Q' && ch!='q');
+	cout<<"Numbers Of Characters Entered = "<<char_count;
+	cout<<endl<<"\t\tAliza Noor";
 	getch();
 	return 0;
 }
